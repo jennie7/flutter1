@@ -24,7 +24,16 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Container(
+        color: Colors.white,
+        child: Center(
+          child: Text(
+              'Hello\nFlutter',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.lightBlue, fontSize: 20),
+          )
+        )
+      )
     );
   }
 }
